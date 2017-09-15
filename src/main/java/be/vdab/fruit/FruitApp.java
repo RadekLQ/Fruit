@@ -1,25 +1,28 @@
 package be.vdab.fruit;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
 
 public class FruitApp {
-
-    //private static Logger logger = LogManager.getLogger();
+    final static org.slf4j.Logger logger = LoggerFactory.getLogger(FruitApp.class);
 
     public static Fruit[] fruitsoorten = new Fruit[]{
-        new Citroen("Algave citroen", 3.0),
-        new Sinaasappel("Jaffa appelsien", 3.2, true),
-        new Sinaasappel("Bloedsappelsien",3.4, true),
-        new Pompelmoes( "Roze pompelmoes", 3.1, "roze"),
-        new Sinaasappel("Persappselsien", 2.5, false),
-        new Pompelmoes("Rode pompelmoes", 3.3, "rood"),
-        new Pompelmoes("Gele pompemmoes", 2.9, "wit")
-};
+            new Citroen("Algave citroen", 3.0),
+            new Sinaasappel("Jaffa appelsien", 3.2, true),
+            new Sinaasappel("Bloedsappelsien", 3.4, true),
+            new Pompelmoes("Roze pompelmoes", 3.1, "roze"),
+            new Sinaasappel("Persappselsien", 2.5, false),
+            new Pompelmoes("Rode pompelmoes", 3.3, "rood"),
+            new Pompelmoes("Gele pompemmoes", 2.9, "wit")
+    };
+
+
 
     public static void main(String[] args) {
         FruitList fruitList = new FruitList();
+
+        logger.trace("Entering application.");
 
 
         for (Fruit fruit : fruitsoorten) {
@@ -29,7 +32,7 @@ public class FruitApp {
         fruitList.toon();
 
 
-
-        //logger.debug("...");
+        logger.debug("...");
+        logger.trace("Exiting application.");
     }
 }
