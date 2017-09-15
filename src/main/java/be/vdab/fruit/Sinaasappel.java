@@ -1,10 +1,10 @@
 package be.vdab.fruit;
 
-public class SinaasAppel extends Fruit {
+public class Sinaasappel extends Fruit {
 
     private boolean soort;
 
-    public SinaasAppel(String naam, double prijsPerKg, boolean soort) {
+    public Sinaasappel(String naam, double prijsPerKg, boolean soort) {
         super(naam, prijsPerKg);
         this.soort = soort;
     }
