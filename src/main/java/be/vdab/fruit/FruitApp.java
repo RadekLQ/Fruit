@@ -17,13 +17,11 @@ public class FruitApp {
             new Pompelmoes("Gele pompemmoes", 2.9, "wit")
     };
 
-
-
     public static void main(String[] args) {
         FruitList fruitList = new FruitList();
 
+        logger.info("Entering application.");
         logger.trace("Entering application.");
-
 
         for (Fruit fruit : fruitsoorten) {
             fruitList.add(fruit);
@@ -31,8 +29,8 @@ public class FruitApp {
         fruitList.sorteerVolgensPrijs();
         fruitList.toon();
 
-
-        logger.debug("...");
+        //logger.debug("...");
+        logger.info("Exiting application.");
         logger.trace("Exiting application.");
     }
 }
