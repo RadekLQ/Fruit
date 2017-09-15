@@ -1,6 +1,12 @@
 package be.vdab.fruit;
 
+
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+
 public class FruitApp {
+
+    //private static Logger logger = LogManager.getLogger();
 
     public static Fruit[] fruitsoorten = new Fruit[]{
         new Citroen("Algave citroen", 3.0),
@@ -15,13 +21,14 @@ public class FruitApp {
     public static void main(String[] args) {
         FruitList fruitList = new FruitList();
 
+
         for (Fruit fruit : fruitsoorten) {
             fruitList.add(fruit);
         }
         fruitList.sorteerVolgensPrijs();
         fruitList.toon();
 
-        //private static Logger logger = LogManager.getLogManager();
+
 
         //logger.debug("...");
     }
