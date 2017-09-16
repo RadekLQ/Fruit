@@ -1,9 +1,7 @@
 package be.vdab.fruit;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class FruitList {
@@ -18,11 +16,9 @@ public class FruitList {
 
     public void sorteerVolgensPrijs() {
         Collections.sort(fruitLijst);
-
     }
 
     public void toon() {
         fruitLijst.stream().forEach(System.out::println);
     }
-
 }

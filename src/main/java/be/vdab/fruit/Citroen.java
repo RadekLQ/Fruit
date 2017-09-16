@@ -6,6 +6,7 @@ public class Citroen extends Fruit {
         super(naam, prijsPerKg);
     }
 
+
     @Override
     public int compareTo(Fruit fruit) {
         return 0;

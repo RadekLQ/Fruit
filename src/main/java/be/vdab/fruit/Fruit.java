@@ -39,15 +39,9 @@ public abstract class Fruit implements Comparable<Fruit> {
                 '}';
     }
 
-//    public double CompareTo(Fruit fruit) {
-//        return this.prijsPerKg - fruit.prijsPerKg;
-//    }
-
-    public double CompareTo(Fruit f1, Fruit f2) {
-        return f1.prijsPerKg - f2.prijsPerKg;
+    public int CompareTo(Fruit fruit) {
+        return (int) (this.prijsPerKg - fruit.prijsPerKg);
     }
-
-
 
 
 }

@@ -8,14 +8,15 @@
     <artifactId>FruitApp</artifactId>
     <version>1.0</version>
 
-<<<<<<< Updated upstream
-=======
+
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <log.level>WARN</log.level>
         <slf4jVersion>1.7.25</slf4jVersion>
+
     </properties>
     <profiles>
         <profile>
@@ -37,6 +38,7 @@
         <finalName>${project.artifactId}_${env.USERNAME}</finalName>
 
         <plugins>
+
             <!--<plugin>-->
             <!--<groupId>org.apache.maven.plugins</groupId>-->
             <!--<artifactId>maven-javadoc-plugin</artifactId>-->
@@ -52,6 +54,8 @@
             <!--</plugin>-->
 
 
+
+
             <!--<plugin>-->
             <!--<groupId>org.apache.maven.plugins</groupId>-->
             <!--<artifactId>maven-jar-plugin</artifactId>-->
@@ -59,11 +63,7 @@
             <!--<configuration>-->
             <!--<archive>-->
             <!--<manifest>-->
-            <!--<addClasspath>true</addClasspath>-->
-            <!--<mainClass>-->
 
-            <!--be.vdab.fruit.FruitApp-->
-            <!--</mainClass>-->
             <!--</manifest>-->
             <!--</archive>-->
             <!--</configuration>-->
@@ -90,40 +90,31 @@
         </plugins>
     </build>
 
->>>>>>> Stashed changes
+
     <dependencies>
 
 
         <dependency>
             <groupId>org.slf4j</groupId>
-<<<<<<< Updated upstream
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.25</version>
-=======
+            <version>${slf4jVersion}</version>
+
+        </dependency>
+        <!-- Binding for System.out -->
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.21</version>
+            <version>${slf4jVersion}</version>
         </dependency>
-        <dependency>
-            <groupId>antlr</groupId>
-            <artifactId>antlr</artifactId>
-            <version>2.7.7</version>
-        </dependency>
-        <dependency>
-            <groupId>antlr</groupId>
-            <artifactId>antlr</artifactId>
-            <version>2.7.7</version>
-        </dependency>
-        <dependency>
-            <groupId>antlr</groupId>
-            <artifactId>antlr</artifactId>
-            <version>2.7.7</version>
-        </dependency>
-        <dependency>
-            <groupId>antlr</groupId>
-            <artifactId>antlr</artifactId>
-            <version>2.7.7</version>
->>>>>>> Stashed changes
-        </dependency>
+
+        <!--<dependency>-->
+        <!--<groupId>org.apache.logging.log4j</groupId>-->
+        <!--<artifactId>log4j-core</artifactId>-->
+        <!--<version>2.4.1</version>-->
+        <!--</dependency>-->
+
+
 
         <!--<dependency>-->
         <!--<groupId>junit</groupId>-->
@@ -131,10 +122,11 @@
         <!--<version>3.8.1</version>-->
         <!--<scope>test</scope>-->
         <!--</dependency>-->
+
         <!--<dependency>-->
-        <!--<groupId>org.apache.logging.log4j</groupId>-->
-        <!--<artifactId>log4j-core</artifactId>-->
-        <!--<version>2.4.1</version>-->
+        <!--<groupId>org.netbeans.lib</groupId>-->
+        <!--<artifactId>cvsclient</artifactId>-->
+        <!--<version>20060125</version>-->
         <!--</dependency>-->
 
     </dependencies>
